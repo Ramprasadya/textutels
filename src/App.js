@@ -9,7 +9,7 @@ import Textform from './component/Textform';
 import { Routes, Route } from "react-router-dom";
 function App() {
 
-  const[mode, setMode] =useState('light');
+  const[mode, setMode] = useState('light');
   const [alert, setAlert] = useState(null)
   const showAlert=(massage,type)=>{
      setAlert({
@@ -39,8 +39,8 @@ function App() {
     <Alert alert={alert}/>
     <div className="container my-3">
     <Routes>
-        <Route path="about" element={<About />} />
         <Route path="/" element={ <Textform showAlert={showAlert} heading="Analyze the text area" mode={mode}/>} />
+        <Route path="about" element={<About />} />
        
       </Routes>
    

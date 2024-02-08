@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 export default function Navbar(props) {
   return (
+    <>
     <nav
       className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
     >
@@ -68,6 +69,7 @@ export default function Navbar(props) {
         </div>
       </div>
     </nav>
+    </>
   );
 }
 
